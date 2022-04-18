@@ -29,6 +29,19 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
+				<configuration> 
+				<cloudHubDeployment>
+				    <uri> https://anypoint.mulesesoft.com</uri>
+				    <muleVersion>3.8.5</muleVersion>
+				    <username>Muralidharreddy14</username>
+				    <password>Murali@12345</password>
+				    <applicationName>Jenkins-murali</applicationName>
+				    <environment>Sandbox</environment>
+				    <workers>1</workers>
+                    <workerType>Micro</workerType> 
+                    <objectStoreV2>true</objectStoreV2>
+				    </cloudHubDeployment>
+				    </configuration>
 			</plugin>
 		</plugins>
 	</build>
